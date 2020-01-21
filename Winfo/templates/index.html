@@ -2,6 +2,53 @@
 
 {% block content %}
 
-<h1>Hello World!</h1>
+{% if api and api1 %}
+    {% if api == "Error..." and api1 == "Error..." %}
+        There was an error please try again...
+    {% else %}
+
+        <div class="jumbotron">
+            <center>
+                <h1 class="display-3 {% if api1.data.aqi >= 0 and api1.data.aqi <= 50 %} good {% elif api1.data.aqi >= 51 and api1.data.aqi <= 100 %} moderate {% elif api1.data.aqi >= 101 and api1.data.aqi <= 150 %} usg {% elif api1.data.aqi >= 151 and api1.data.aqi <= 200 %} unhealthy {% elif api1.data.aqi >= 201 and api1.data.aqi <= 300 %} veryunhealthy {% elif api1.data.aqi > 300 %} hazardous {% endif %}"> <strong> {% if api1.data.aqi >= 0 and api1.data.aqi <= 50 %} Good {% elif api1.data.aqi >= 51 and api1.data.aqi <= 100 %} Moderate {% elif api1.data.aqi >= 101 and api1.data.aqi <= 150 %} Unhealthy for Sensitive Groups {% elif api1.data.aqi >= 151 and api1.data.aqi <= 200 %} Unhealthy {% elif api1.data.aqi >= 201 and api1.data.aqi <= 300 %} Very Unhealthy {% elif api1.data.aqi > 300 %} Hazardous {% endif %}</strong> </h1>
+<br>
+  <h1>Current {{ api.name}} Air Quality Index: {{ api1.data.aqi }}</h1>
+            <br>
+            <h3> Description:-</h3>
+        {% if api1.data.aqi >= 0 and api1.data.aqi <= 50 %}
+            <h3> ( 0 - 50 )Air quality is considered satisfactory, and air pollution poses little or no risk.</h3>
+        {% elif api1.data.aqi >= 51 and api1.data.aqi <= 100 %}
+            <h3> ( 51 - 100 ) Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.</h3>
+        {% elif api1.data.aqi >= 101 and api1.data.aqi <= 150 %}
+            <h3> ( 101 - 150 ) Members of sensitive groups may experience health effects. The general public is not likely to be affected.</h3>
+         {% elif api1.data.aqi >= 151 and api1.data.aqi <= 200 %}
+            <h3> ( 151 - 200 ) Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects.</h3>
+         {% elif api1.data.aqi >= 201 and api1.data.aqi <= 300 %}
+            <h3> ( 201 - 300 ) Health warnings of emergency conditions. The entire population is more likely to be affected.</h3>
+          {% elif api1.data.aqi > 300 %}
+            <h3> ( 300+ ) Health alert: everyone may experience more serious health effects.</h3>
+          {% endif %}
+
+<br><br>
+            <h4> Area: {{ api1.data.city.name }}</h4>
+            <h4>Current Temperature: {{ api.main.temp }} °C</h4>
+            <h4>Temperature Feels Like: {{ api.main.feels_like }} °C</h4>
+            <h4>Minimum Temperature: {{ api.main.temp_min }} °C</h4>
+            <h4>Maximum Temperature: {{ api.main.temp_max }} °C</h4>
+            <h4>Atmospheric Pressure: {{ api.main.pressure }} millibar</h4>
+            <h4>Humidity: {{ api.main.humidity }} %</h4>
+        </center>
+
+</div>
+
+           <br>
+
+<br><br><br>
+
+<br><br>
+    {% endif %}
+{% endif %}
+
+
+
 
 {% endblock %}

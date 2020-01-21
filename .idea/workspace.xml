@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="44ab10af-03f5-4c82-8669-aec3ce0c6925" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Winfo/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/Winfo/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Winfo/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Winfo/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Winfo/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Winfo/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Winfo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Winfo/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +34,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/movieticketproject" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="ServiceViewManager">
@@ -60,9 +63,21 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1579605639494">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579605639494" />
     <state x="277" y="56" key="SettingsEditor" timestamp="1579445279053">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1579445279053" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1579628295925">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1579628295925" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1579550425087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1579550425087" />
   </component>
 </project>
