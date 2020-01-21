@@ -25,7 +25,7 @@ SECRET_KEY = 'v5t%05^l$g-5%v+^1zb#aqk4lcgr5^v!#6*@dy_0o_*p$*5^sa'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://bharat9926.pythonanywhere.com/']
 
 
 # Application definition
